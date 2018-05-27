@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<autopark>
+    <name>Auto park</name>
+    <locations>
+        <location id="1">
+            <address>125009, Moscow, 13 Tverskaya str</address>
+            <type>Rental</type>
+            <vehicles>
+                <vehicle id="1" status="Active">
+                    <name>BMW X6</name>
+                    <year>2015</year>
+                    <mileage>20000</mileage>
+                    <vehicle-inspection>2018</vehicle-inspection>
+                    <next-vehicle-inspection>2019</next-vehicle-inspection>
+                </vehicle>
+                <vehicle id="2" status="Rented">
+                    <name>AUDI A6</name>
+                    <year>2014</year>
+                    <mileage>-</mileage>
+                    <vehicle-inspection>2018</vehicle-inspection>
+                    <next-vehicle-inspection>2019</next-vehicle-inspection>
+                </vehicle>
+                <vehicle id="3" status="In repairs">
+                    <name>AUDI A4</name>
+                    <year>2013</year>
+                    <mileage>-</mileage>
+                    <vehicle-inspection>2018</vehicle-inspection>
+                    <next-vehicle-inspection>2019</next-vehicle-inspection>
+                </vehicle>
+                <vehicle id="4" status="Out-of-service">
+                    <name>Volkswagen jetta</name>
+                    <year>2001</year>
+                    <mileage>-</mileage>
+                    <vehicle-inspection>2018</vehicle-inspection>
+                    <next-vehicle-inspection>2019</next-vehicle-inspection>
+                </vehicle>
+            </vehicles>
+        </location>
+        <location id="2">
+            <address>125009, Moscow, 32 Volnaya str.</address>
+            <type>Rental</type>
+            <vehicles>
+                <vehicle id="5" status="Active">
+                    <name>Lada Vesta</name>
+                    <year>2018</year>
+                    <mileage>20000</mileage>
+                    <vehicle-inspection>2018</vehicle-inspection>
+                    <next-vehicle-inspection>2019</next-vehicle-inspection>
+                </vehicle>
+                <vehicle id="6" status="Active">
+                    <name>AUDI A8</name>
+                    <year>2018</year>
+                    <mileage>2000</mileage>
+                    <vehicle-inspection>2018</vehicle-inspection>
+                    <next-vehicle-inspection>2019</next-vehicle-inspection>
+                </vehicle>
+                <vehicle id="7" status="Rented">
+                    <name>AUDI S6</name>
+                    <year>2013</year>
+                    <mileage>-</mileage>
+                    <vehicle-inspection>2018</vehicle-inspection>
+                    <next-vehicle-inspection>2019</next-vehicle-inspection>
+                </vehicle>
+                <vehicle id="8" status="Out-of-service">
+                    <name>Lada Kalina</name>
+                    <year>2001</year>
+                    <mileage>-</mileage>
+                    <vehicle-inspection>2018</vehicle-inspection>
+                    <next-vehicle-inspection>2019</next-vehicle-inspection>
+                </vehicle>
+            </vehicles>
+        </location>
+    </locations>
+</autopark>
