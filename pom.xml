@@ -20,6 +20,9 @@
 
         <spring.version>5.0.5.RELEASE</spring.version>
         <jasperreports.version>6.4.3</jasperreports.version>
+
+        <!--    Tests  -->
+        <junit.version>4.12</junit.version>
     </properties>
 
     <build>
@@ -51,6 +54,14 @@
             <groupId>net.sf.jasperreports</groupId>
             <artifactId>jasperreports</artifactId>
             <version>${jasperreports.version}</version>
+        </dependency>
+
+        <!--Test-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 </project>
