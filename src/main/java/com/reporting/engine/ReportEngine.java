@@ -6,6 +6,7 @@ import com.reporting.source.DataSource;
 import net.sf.jasperreports.engine.*;
 import net.sf.jasperreports.export.SimpleOutputStreamExporterOutput;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -22,6 +23,7 @@ public class ReportEngine {
 
     public void generate() throws JRException  {
         final Map<String, Object> parameters = new HashMap<>();
+        parameters.put("dateFormed", new Date());
         JasperPrint jasperPrint = JasperFillManager.fillReport(reportProvider.getReport(), parameters,
                 dataSource.getDataSource());
         Exporter exporter =

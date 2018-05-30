@@ -11,7 +11,7 @@ public class XMLReportDataSource implements DataSource {
     private final JRDataSource dataSource;
 
     public XMLReportDataSource(String xmlFileName) throws JRException {
-        this.dataSource = new JRXmlDataSource(getClass().getResourceAsStream("/" + xmlFileName), "autopark");
+        this.dataSource = new JRXmlDataSource(getClass().getResourceAsStream("/" + xmlFileName), "vehicles");
     }
 
     public XMLReportDataSource(InputStream is) throws JRException {
