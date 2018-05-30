@@ -10,12 +10,12 @@ public class XMLReportDataSource implements DataSource {
 
     private final JRDataSource dataSource;
 
-    public XMLReportDataSource(String xmlFileName) throws JRException {
-        this.dataSource = new JRXmlDataSource(getClass().getResourceAsStream("/" + xmlFileName), "vehicles");
+    public XMLReportDataSource(String xmlFileName, String rootElementName) throws JRException {
+        this.dataSource = new JRXmlDataSource(getClass().getResourceAsStream("/" + xmlFileName), rootElementName);
     }
 
-    public XMLReportDataSource(InputStream is) throws JRException {
-        this.dataSource = new JRXmlDataSource(is);
+    public XMLReportDataSource(InputStream is, String rootElementName) throws JRException {
+        this.dataSource = new JRXmlDataSource(is, rootElementName);
     }
 
     public JRDataSource getDataSource() {

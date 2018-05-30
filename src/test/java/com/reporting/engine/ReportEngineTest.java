@@ -7,6 +7,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class ReportEngineTest {
@@ -20,14 +21,14 @@ public class ReportEngineTest {
     @Before
     public void before() throws Exception {
         provider = new ReportProvider("autopark.jrxml", "autopark.pdf");
-        dataSource = new XMLReportDataSource("autopark.xml");
+        dataSource = new XMLReportDataSource("autopark.xml", "vehicles");
         reportEngine = new ReportEngine(provider, dataSource);
     }
 
     @Test
     public void generateFile() throws Exception {
         reportEngine.generate();
-        assertTrue(Files.exists(Paths.get(provider.getOutputFileName())));
-        assertTrue(Files.size(Paths.get(provider.getOutputFileName())) > 0);
+        Path pdfFile = Paths.get(provider.getOutputFileName());
+        assertTrue(Files.exists(pdfFile));
     }
 }
